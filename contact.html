@@ -13,29 +13,60 @@
 
 <body>
     <div class="pageWrapper">
-    <header>
-        <h1>Fun4Less</h1>
-        <h2>Save Money. Make Memories.</h2>
-    </header>
-    <nav>
-        <ul class="navigation">
-            <li id="home"><a href="index.html">Home</a></li>
-            <li id="gallery"><a href="gallery.html">Destinations</a></li>
-            <li id="video"><a href="video.html">Video</a></li>
-            <li id="packages"><a href="packages.html">Packages</a></li>
-            <li class="activeTab" id="contact"><a href="contact.html">Contact Us</a></li>
+        <header>
+            <h1>Fun4Less</h1>
+            <h2>Save Money. Make Memories.</h2>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li id="home"><a href="index.html">Home</a></li>
+                <li id="gallery"><a href="gallery.html">Destinations</a></li>
+                <li id="video"><a href="video.html">Video</a></li>
+                <li id="packages"><a href="packages.html">Packages</a></li>
+                <li class="activeTab" id="contact"><a href="contact.html">Contact Us</a></li>
+                <div class="stopcollapse"></div>
+            </ul>
+        </nav>
+        <main>
+            <form action="thanks.html" method="post" enctype="multipart/form-data" name="ContactForm">
+                <fieldset class="fieldset">
+                    <legend>Your Contact Info</legend>
+                    <label><input type="text" name="name" placeholder="First Name" required class="info"></label>
+                    <label><input type="text" name="name" placeholder="Last Name" class="info"></label>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <legend>Your Message</legend>
+                    <label><input type="text" name="subject" placeholder="Subject Line" class="info"></label><br>
+                    <label><textarea name="message" placeholder="Message" class="info"></textarea></label>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <legend>Additional Information</legend>
+                    <label> Package <br>
+                        <select required name="package">
+                            <option>European Package</option>
+                            <option>Australian Package</option>
+                            <option>North Atlantic Package</option>
+                        </select>
+                    </label><br>
+                    <label>Purpose of your trip. Please select 1. <br><input type="radio" name="family"
+                            value="Vacation">Vacation</label><br>
+                    <label><input type="radio" name="business" value="Business Trip">Business Trip</label><br>
+                    <label><input type="radio" name="other" value="Other">Other</label>
+                </fieldset>
+
+                <input type="submit" name="send" value="Send" class="button">
+                <input type="hidden" name="submission" value="thanks.html">
+            </form>
+
             <div class="stopcollapse"></div>
-        </ul>
-    </nav>
-    <main>
-    
-</main>
-<footer>
-        <p>&copy; 2019 &bull; Fun4Less &bull; Created by LPDev</p>
+
+        </main>
+        <footer>
+            <p>&copy; 2019 &bull; Fun4Less &bull; Created by LPDev</p>
 
 
-</footer>
-</div>
+        </footer>
+    </div>
 
 </body>
 
