@@ -25,36 +25,7 @@ header h1 {
 
 
 /* Navigation CSS */
-.navigation {
-    padding-left: 20px;
-    background-color:#0396A6;
-    color: white;
-    list-style: none;
-    text-decoration: none;
 
-    
-
-}
-.navigation li {
-    float: left;
-}
-nav ul.navigation li a {
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-}
-nav ul.navigation li a:hover {
-    background-color: #D96B2B;
-}
-
-.stopcollapse {
-    clear: both;
-}
-
-.activeTab {
-    background-color: #D96B2B
-}
 /*Main CSS */
 h1, h2, h3 {
     font-family: 'Lato', sans-serif;
@@ -114,6 +85,7 @@ footer {
     padding: 1px 0px 1px 0px;
     text-align: center;
     color: #FFFFFF;
+    border-radius: 0px 0px 11px 11px;
 
 }
 
@@ -148,9 +120,9 @@ border-radius: 1rem;
         }
     
 
-a:link {color:#F28627;}
-a:visited {color: #D96B2B;}
-a:hover {color: #0396A6;}
+p a:link {color:#F28627;}
+p a:visited {color: #D96B2B;}
+p a:hover {color: #0396A6;}
 
 .fieldset {
     border-color: #84B4BF;
@@ -184,3 +156,66 @@ legend {
 .button:hover {
 background-color: #D96B2B;
 }
+@media only screen and (min-width: 601px) {
+    .navigation {
+        padding-left: 20px;
+        background-color:#0396A6;
+        color: white;
+        list-style: none;
+        text-decoration: none;
+    }
+    .navigation li {
+        float: left;
+    }
+    nav ul.navigation li a {
+        display: block;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+    }
+    nav ul.navigation li a:hover {
+        background-color: #D96B2B;
+    }
+    
+    .stopcollapse {
+        clear: both;
+    }
+    
+    .active {
+        background-color: #D96B2B
+    }
+    }/*End Desktop Query*/
+/* Phone Nav Media Query*/
+@media only screen and (max-width: 600px) {
+    nav {
+        color: white;
+
+    }
+    nav ul {
+        list-style-type: none;
+    }   
+   
+    nav ul li a {
+        padding: .5rem 1rem;
+        margin-bottom: .5rem;
+        background: #0396A6;
+        text-decoration: none;
+        display: block;
+        border: solid 1px #84B4BF;
+        border-radius: .4rem;
+        color: white;
+        margin-right: 2rem;
+
+    }
+    nav ul li.active a {
+        background: #D96B2B;
+        color: white;
+    }
+    nav a:hover{
+        background-color: #D96B2B;
+        color: white;
+    }    
+
+}/*End phone navigation Query*/
+
+
