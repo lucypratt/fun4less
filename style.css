@@ -189,10 +189,15 @@ background-color: #D96B2B;
 
     }
     }/*End Desktop Query*/
+
+    nav {
+        background: #0396A6;
+    }
+    
 /* Phone Nav Media Query*/
 @media only screen and (max-width: 600px) {
     nav {
-        color: white;
+        background: white;
 
     }
     nav ul {
@@ -235,6 +240,4 @@ background-color: #D96B2B;
     }
 }/*End phone navigation Query*/
 
-nav {
-    background: #0396A6;
-}
+
