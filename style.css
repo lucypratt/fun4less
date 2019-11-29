@@ -165,6 +165,7 @@ background-color: #D96B2B;
         text-decoration: none;
         background:#0396A6;
         }
+    
 
     .navigation li {
         float: left;
@@ -185,6 +186,7 @@ background-color: #D96B2B;
     }
     .stopcollapse {
         clear: both;
+
     }
     }/*End Desktop Query*/
 /* Phone Nav Media Query*/
@@ -217,9 +219,7 @@ background-color: #D96B2B;
         background-color: #D96B2B;
         color: white;
     }    
-    .stopcollapse {
-        clear: both;
-    }
+
 
     .pkg2 p {
         padding-left: 3px;
@@ -230,6 +230,11 @@ background-color: #D96B2B;
     .pkg3 p {
         padding-left: 3px;
     }
+    .stopcollapse {
+        clear: both;
+    }
 }/*End phone navigation Query*/
 
-
+nav {
+    background: #0396A6;
+}
