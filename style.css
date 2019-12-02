@@ -197,7 +197,7 @@ background-color: #D96B2B;
 /* Phone Nav Media Query*/
 @media only screen and (max-width: 600px) {
     nav {
-        background: white;
+        background: #FFFFFF;
 
     }
     nav ul {
